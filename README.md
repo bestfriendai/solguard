@@ -49,3 +49,27 @@ solguard/
 ## License
 
 MIT
+
+## API Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Solar/Energy API (optional - for energy monitoring)
+SOLAR_API_KEY=your_solar_api_key
+SOLAR_API_URL=https://api.solguard.com/v1
+
+# Energy Provider API
+ENERGY_API_KEY=your_energy_api_key
+```
+
+### RevenueCat Configuration
+
+1. Create an account at [RevenueCat.com](https://revenuecat.com)
+2. Create products in App Store Connect / Google Play Console:
+   - Monthly: $3.99/month - `solguard_monthly`
+   - Annual: $24.99/year - `solguard_annual`
+3. Configure products in RevenueCat dashboard
+4. Add your API key to `src/services/purchases.ts`
