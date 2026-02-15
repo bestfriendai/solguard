@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "SoloGuard",
+    "slug": "solguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#DC2626"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.solguard.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SoloGuard needs your location to track your position for safety check-ins.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SoloGuard needs background location access to alert your contacts if you miss a check-in.",
+        "UIBackgroundModes": ["location", "fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#DC2626"
+      },
+      "package": "com.solguard.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "solguard",
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
