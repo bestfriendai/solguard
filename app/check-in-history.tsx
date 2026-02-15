@@ -10,7 +10,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { colors, spacing, radius, fontSize, fontWeight } from '../../src/theme';
+import { colors, spacing, radius, fontSize, fontWeight } from '../src/theme';
 
 interface CheckIn {
   id: string;
